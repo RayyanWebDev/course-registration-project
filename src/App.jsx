@@ -1,9 +1,10 @@
 import "./App.css";
+import Courses from "./Components/Courses/Courses";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Courses></Courses>
     </>
   );
 }

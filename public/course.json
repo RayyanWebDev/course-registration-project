@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/cLbv6S2/3.png",
+    "courseName": "Introduction to C Programming",
+    "details": "Learn the fundamentals of computer science and programming.",
+    "price": 15000,
+    "credits": 1
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/K9mYkwZ/4.png",
+    "courseName": "Introduction to Algorithms",
+    "details": "Master the basics of calculus with practical examples.",
+    "price": 25000,
+    "credits": 2
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/5RszbFg/5.png",
+    "courseName": "Introduction to C++ for DSA",
+    "details": "Explore the rich history of art from ancient to contemporary.",
+    "price": 10000,
+    "credits": 10
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/N1RKnLQ/8.png",
+    "courseName": "Basic Data Structures",
+    "details": "Get a solid foundation in chemistry principles and concepts.",
+    "price": 35000,
+    "credits": 5
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/kX2Zwcp/1.png",
+    "courseName": "Introduction to OOP Python",
+    "details": "Discover the fascinating world of psychology and human behavior.",
+    "price": 19000,
+    "credits": 5
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/D7h4tJd/6.png",
+    "courseName": "Software Engineering",
+    "details": "Enhance your writing skills and compose effective essays.",
+    "price": 23000,
+    "credits": 2
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/DCb59KP/9.png",
+    "courseName": "AWS, Cloud Computing",
+    "details": "Understand the basics of economics and its real-world applications.",
+    "price": 35000,
+    "credits": 5
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/L5qhCwh/2.png",
+    "courseName": "Database (MySQL)",
+    "details": "Study physics principles tailored for engineering students.",
+    "price": 19000,
+    "credits": 5
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/wCjxnZt/7.png",
+    "courseName": "Problem-Solving Part",
+    "details": "Explore ethical dilemmas in business and decision-making.",
+    "price": 23000,
+    "credits": 2
+  }
+]
