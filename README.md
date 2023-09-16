@@ -34,7 +34,7 @@ This README provides an overview of some major features of this project, in addi
 
 - #### Content of the Project:
 
-  The project is about building a webpage using react.js to register on a diverse range of programming courses, covering various languages and frameworks. Each card possess an <img> tag, the course title in a <h3> tag, the course detail, credit and price in a <p> tag, last but not the least a “Select” <button>.
+  The project is about building a webpage using react.js to register on a diverse range of programming courses, covering various languages and frameworks. Each card possess an img tag, the course title in a h3 tag, the course detail, credit and price in a paragraph tag, last but not the least a “Select” button.
 
 - #### API:
 
