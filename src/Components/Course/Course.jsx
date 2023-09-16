@@ -10,14 +10,18 @@ const Course = ({ selectedCourses, remaining, totalCost }) => {
         <hr className="border-neutral-400" />
         <h3 className="text-xl font-bold mb-6 ml-14">Course Name </h3>
 
-        {selectedCourses.map((course) => (
+        {selectedCourses.map((course, index) => (
           <ol key={course.id}>
-            <li>{course.courseName}</li>
+            <li className="text-gray-500 ml-6">{`${index + 1}. ${
+              course.courseName
+            }`}</li>
           </ol>
         ))}
         <br />
         <hr className="border-neutral-400" />
-        <h3 className="ml-2 mt-2 mb-2 ">Total Credit Hour:{totalCost} </h3>
+        <h3 className="ml-2 mt-2 mb-2 text-base font-medium text-gray-700">
+          Total Credit Hour:{totalCost}{" "}
+        </h3>
         <hr className="border-neutral-400" />
       </div>
     </>

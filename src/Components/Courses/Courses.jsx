@@ -53,14 +53,17 @@ const Courses = () => {
           {allCourses.map((course) => (
             <div
               key={course.id}
-              className="w-72 border-transparent border-4  bg-slate-100 rounded-lg "
+              className="w-72 mb-10 border-transparent border-4  bg-slate-100 rounded-lg "
             >
               <img className="mt-2 " src={course.img} alt="" />
               <h3 className="text-1xl font-semibold text-center mt-2 mb-2">
                 {" "}
                 {course.courseName}{" "}
               </h3>
-              <p className="text-xs mb-5 text-center"> {course.details} </p>
+              <p className="text-xs mb-5 text-center text-gray-500">
+                {" "}
+                {course.details}{" "}
+              </p>
               <div className="flex gap-20 justify-center">
                 <p className="text-sm font-medium">
                   <FontAwesomeIcon icon={faDollarSign} /> Price: {course.price}
