@@ -8,9 +8,31 @@ const Courses = () => {
 
   const [selectedCourses, setSelectedCourses] = useState([]);
 
+  const [remaining, setRemaining] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
   const handleCourses = (course) => {
     const isExist = selectedCourses.find((item) => item.id == course.id);
     console.log(isExist);
+
+    let totalCount = course.credits;
+    if (isExist) {
+      alert("Course already exists");
+    } else {
+      selectedCourses.forEach((item) => {
+        totalCount += item.credits;
+      });
+
+      const totalRemaining = 20 - totalCount;
+
+      if (totalCount > 20) {
+        return alert("No more credits available");
+      } else {
+        setRemaining(totalRemaining);
+        setTotalCost(totalCount);
+        const newSelectedCourses = [...selectedCourses, course];
+        setSelectedCourses(newSelectedCourses);
+      }
+    }
   };
 
   useEffect(() => {
@@ -58,9 +80,12 @@ const Courses = () => {
             </div>
           ))}
         </div>
-
         <div className="">
-          <Course></Course>
+          <Course
+            selectedCourses={selectedCourses}
+            remaining={remaining}
+            totalCost={totalCost}
+          ></Course>
         </div>
       </div>
     </div>
