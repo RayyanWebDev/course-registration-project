@@ -16,7 +16,7 @@ const Courses = () => {
 
     let totalCount = course.credits;
     if (isExist) {
-      alert("Course already exists");
+      alert("This course already exists");
     } else {
       selectedCourses.forEach((item) => {
         totalCount += item.credits;
@@ -60,7 +60,7 @@ const Courses = () => {
                 {" "}
                 {course.courseName}{" "}
               </h3>
-              <p className="text-xs mb-5 text-center text-gray-500">
+              <p className="text-xs mb-4 text-center text-gray-500">
                 {" "}
                 {course.details}{" "}
               </p>
