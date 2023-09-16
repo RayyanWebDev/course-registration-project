@@ -4,6 +4,15 @@ import { faDollarSign, faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 const Courses = () => {
+  const [allCourses, setAllCourses] = useState([]);
+
+  useEffect(() => {
+    fetch("./course.json")
+      .then((res) => res.json())
+      .then((data) => setAllCourses(data));
+  }, []);
+
+  console.log(allCourses);
   return (
     <div>
       <h1 className="mb-10 mt-8 text-center text-2xl font-semibold">
