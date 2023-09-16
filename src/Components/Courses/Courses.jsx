@@ -6,6 +6,13 @@ import Course from "../Course/Course";
 const Courses = () => {
   const [allCourses, setAllCourses] = useState([]);
 
+  const [selectedCourses, setSelectedCourses] = useState([]);
+
+  const handleCourses = (course) => {
+    const isExist = selectedCourses.find((item) => item.id == course.id);
+    console.log(isExist);
+  };
+
   useEffect(() => {
     fetch("./course.json")
       .then((res) => res.json())
@@ -31,15 +38,15 @@ const Courses = () => {
                 {" "}
                 {course.courseName}{" "}
               </h3>
-              <p className="text-xs mb-5 text-center"> </p>
+              <p className="text-xs mb-5 text-center"> {course.details} </p>
               <div className="flex gap-20 justify-center">
                 <p className="text-sm font-medium">
-                  <FontAwesomeIcon icon={faDollarSign} /> Price:
+                  <FontAwesomeIcon icon={faDollarSign} /> Price: {course.price}
                 </p>
 
                 <p className="text-sm font-medium">
                   <FontAwesomeIcon icon={faBookOpen} />
-                  {"   "} Credit: hr
+                  {"   "} Credit: {course.credits} hr
                 </p>
               </div>
               <button
