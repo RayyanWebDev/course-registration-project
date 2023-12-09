@@ -12,6 +12,7 @@ Currently, two official plugins are available:
 ## Table of Contents
 
 - ### Introduction
+- ### Live Site Link
 - ### Project Features
   - #### Content of the Project:
   - #### API:
@@ -27,6 +28,9 @@ Currently, two official plugins are available:
 
 Welcome to my “Course Registration” project!
 This README provides an overview of some major features of this project, in addition to that discusses how state is used here.
+
+## Live Site Link:
+https://brainy-juice.surge.sh/
 
 ## Features
 
